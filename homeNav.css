@@ -1,0 +1,127 @@
+:root {
+    --nav-height: 50px;
+  }
+.nhomenav{
+    height: var(--nav-height);
+}
+.nhomenav--hidden{
+    position: absolute;
+    left: -100vw;
+}
+.nhomenav__left{
+    float: left;
+}
+.nhomenav__logoimg{
+    height: var(--nav-height);
+    width: 100px;    
+}
+.nhomenav__logo{
+    float: left;
+}
+.nhomenav_mobile{
+    float: left;
+}
+.nhomenav__navitems{
+    float: left;
+}
+.nhomenav__togglebtn{
+    display:none;
+    position: absolute;
+    left: 100%;
+    background-color:white;
+    top:8px;
+    padding:4px;
+}
+.nhomenav__navitem{
+    /* display: inline-block; */
+    line-height:var(--nav-height);
+    float: left;
+    margin-left: 20px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nhomenav__right{
+    float: right;
+    padding: 11px 0;
+}
+.nhomenav__loginbtn{
+    float: right;
+    margin-right: 10px;
+    font-size: 10px;
+    padding: 7px 10px;
+}
+.nhomenav__loginbtnagency{
+    float: right;
+    font-size: 11px;
+    color: white;
+    background-color: #54a050;
+    padding: 7px 10px;
+}
+.nhomenav__loginbtn--mobile{
+    display: none;
+}
+.nhomenav__loginbtnagency--mobile{
+    display: none;
+}
+@media only screen and (max-width: 992px) {
+    /* .nhomenav__navitem {
+        margin-left: 12px;
+    }
+    .nhomenav__loginbtn{ 
+        margin-right: 0px;
+    } */
+}
+@media only screen and (max-width: 768px) {
+    .nhomenav__navitem {
+         margin-left: 6px;
+        }
+        .nhomenav__loginbtn{ 
+            margin-right: 0px;
+        }
+}
+@media only screen and (max-width: 576px) {
+    /* .nhomenav__navitem {
+        float: none;
+    } */
+    .nhomenav__right{
+        display: none;
+    }
+    .nhomenav_mobile{
+        position: absolute;
+        top: 0;
+        left: -60%;
+       height: 100vh;
+        padding-left: 20px;
+        width: 60%;
+        margin:0;
+        background-color:#28a745;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+    .nhomenav__togglebtn{
+        display: block;
+        cursor: pointer;
+    }
+    .nhomenav--hidden:checked ~ .nhomenav_mobile{
+        left: 0;
+    }
+    .nhomenav__loginbtn--mobile{
+        display: block;
+    }
+    .nhomenav__loginbtnagency--mobile{
+        display: block;
+    }
+    .nhomenav__left{
+        width: 100%;
+    }
+    .nhomenav__logo{
+        float: none;
+        width: 100px;
+        margin: 0 auto;
+    }
+
+}
