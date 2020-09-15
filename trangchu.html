@@ -1,74 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="trangchu.css">
-    <link rel="stylesheet" href="homeNav.css">
-    <link rel="stylesheet" href="intro.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-</head>
-<body>
-    <div class='nhomenav'>
-        <div class='container nhomenav__container'>
-          <div class='nhomenav__left'>
-            <div class='nhomenav__logo'>
-             <img class='nhomenav__logoimg' alt='logoimg' src='/Netaland-logo-demo.png' />
-            </div>
-            <input type='checkbox' id='toggle' class='nhomenav--hidden' />
-            <div class='nhomenav_mobile'>
-              <label class='nhomenav__togglebtn' htmlFor='toggle'> Toggle</label>
-              <div class='nhomenav__navitems'>
-                <div class='nhomenav__navitem'> Dự án</div>
-                <div class='nhomenav__navitem'> Mua bán</div>
-                <div class='nhomenav__navitem'> Cho thuê</div>
-                <div class='nhomenav__navitem'> Vay mua nhà</div>
-                <div class='nhomenav__navitem'>Tin tức</div>
-                <div class='nhomenav__loginbtnagency--mobile'>Dành cho mô giới</div>
-                <div class='nhomenav__loginbtn--mobile'>Đăng nhập</div>
+    <!-- <link rel="stylesheet" href="reset.css" /> -->
+    <!-- <link rel="stylesheet" href="grid.css" /> -->
+    <link rel="stylesheet" href="trangchu.css" />
+    <link rel="stylesheet" href="homeNav.css" />
+    <link rel="stylesheet" href="intro.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
+    <link href="bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="nhomenav">
+      <div class="container nhomenav__container">
+        <div class="nhomenav__left">
+          <div class="nhomenav__logo">
+            <img
+              class="nhomenav__logoimg"
+              alt="logoimg"
+              src="/Netaland-logo-demo.png"
+            />
+          </div>
+          <input type="checkbox" id="toggle" class="nhomenav--hidden" />
+          <div class="nhomenav_mobile">
+            <label class="nhomenav__togglebtn" htmlFor="toggle"> Toggle</label>
+            <div class="nhomenav__navitems">
+              <div class="nhomenav__navitem">Dự án</div>
+              <div class="nhomenav__navitem">Mua bán</div>
+              <div class="nhomenav__navitem">Cho thuê</div>
+              <div class="nhomenav__navitem">Vay mua nhà</div>
+              <div class="nhomenav__navitem">Tin tức</div>
+              <div class="nhomenav__loginbtnagency--mobile">
+                Dành cho mô giới
               </div>
+              <div class="nhomenav__loginbtn--mobile">Đăng nhập</div>
             </div>
           </div>
-          <div class='nhomenav__right'>
-            <div class='nhomenav__loginbtnagency'>Dành cho mô giới</div>
-            <div class='nhomenav__loginbtn'>Đăng nhập</div>
+        </div>
+        <div class="nhomenav__right">
+          <div class="nhomenav__loginbtnagency">Dành cho mô giới</div>
+          <div class="nhomenav__loginbtn">Đăng nhập</div>
+        </div>
+      </div>
+    </div>
+    <div class="intro__container container-fluid">
+      <div class="intro__content">
+        <div class="intro__title">Tìm kiếm ngôi nhà mơ ước của bạn</div>
+        <div class="intro__tabs">
+          <div class="intro__tab">Mua bán</div>
+          <div class="intro__tab">Cho thuê</div>
+          <div class="intro__tab">Dự án</div>
+          <div class="intro__tab">Giá nhà đất</div>
+        </div>
+        <input
+          type="text"
+          class="intro__search"
+          placeholder="Tìm theo khu vực, dự án, địa điểm"
+        />
+        <div class="intro__filter">
+          <div class="intro__filter__item">
+            <div>Tỉnh/Thành phố</div>
+            <span> <i class="fa fa-camera-retro"></i> </span>
+          </div>
+          <div class="intro__filter__item">
+            <div>Quận/Huyện</div>
+          </div>
+          <div class="intro__filter__item">
+            <div>Loại BĐS</div>
+          </div>
+          <div class="intro__filter__item">
+            <div>Khoảng giá</div>
+          </div>
+          <div class="intro__filter__item">
+            <div>Diện tích</div>
           </div>
         </div>
       </div>
-      <div class='intro__container container-fluid'>
-          <div class='intro__content'>
-            <div class='intro__title'>Tìm kiếm ngôi nhà mơ ước của bạn</div>
-            <div class='intro__tabs'>
-                <div class='intro__tab'> Mua bán</div>
-                <div class='intro__tab'> Cho thuê</div>
-                <div class='intro__tab'> Dự án</div>
-                <div class='intro__tab'> Giá nhà đất</div>
+    </div>
+
+    <!--CHARITY DONATION-->
+    <!-- <div class="container">
+      <div class="section-title">
+        <h4>DỰ ÁN NỔI BẬT TOÀN QUỐC</h4>
+
+        <h6>SẮP MỞ BÁN</h6>
+        <h6>ĐANG MỞ BÁN</h6>
+        <h6>KÝ GỬI</h6>
+      </div>
+    </div> -->
+    <!--// END CHARITY DONATION -->
+
+    <!-- BLOG LIST / LATEST SERMONS -->
+    <div class="container has-margin-bottom">
+      <div class="row">
+        <div class="col-md-9 has-margin-bottom">
+          <div class="section-title">
+            <h4 class="left">DỰ ÁN NỔI BẬT TOÀN QUỐC</h4>
+
+            <h6 class="right">SẮP MỞ BÁN</h6>
+            <h6 class="right">ĐANG MỞ BÁN</h6>
+            <h6 class="right">KÝ GỬI</h6>
+          </div>
+          <!--Blog list-->
+          <div class="row has-margin-bottom">
+            <div class="col-md-4 col-sm-4">
+              <img
+                class="img-responsive center-block"
+                src="blog-thumb-1.png"
+                alt="bulletin blog"
+              />
             </div>
-            <input type='text' class='intro__search' placeholder="Tìm theo khu vực, dự án, địa điểm" />
-            <div class='intro__filter'>
-                <div class='intro__filter__item'>
-                    <div>Tỉnh/Thành phố</div>
-                    <span> <i class="fa fa-camera-retro"></i> </span>
-                   
+            <div class="col-md-8 col-sm-8 bulletin">
+              <div class="display-flex-space-between">
+                <h4 class="media-heading">Hồ Tràm Complex</h4>
+                <h4 class="price">12.3 - 31 tỷ</h4>
+              </div>
+              <div class="address">
+                Đường 44B, xã Phước Thuận, huyện Xuyên Mộc, tỉnh Bà Rịa - Vũng
+                Tàu
+              </div>
+              <div class="info">
+                <div class="company-name">
+                  Công ty TNHH Du lịch Minh Tuấn Sông Ray
                 </div>
-                <div class='intro__filter__item'>
-                    <div>Quận/Huyện</div>
+
+                <div class="display-flex">
+                  <div class="flex-33-percent">442 - 1636 m2</div>
+                  <div class="flex-33-percent">Bàn giao: 09/2021</div>
+                  <div class="flex-33-percent">Đang xây dựng</div>
                 </div>
-                <div class='intro__filter__item'>
-                    <div>Loại BĐS</div>
-                </div>
-                <div class='intro__filter__item'>
-                    <div>Khoảng giá</div>
-                </div>
-                <div class='intro__filter__item'>
-                    <div>Diện tích</div>
-                </div>
+
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Căn hộ cao cấp</a
+                >
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Căn hộ Studio</a
+                >
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Căn hộ penhouse</a
+                >
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Biệt thự song lập</a
+                >
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Biệt thực đơn lập</a
+                >
+              </div>
             </div>
           </div>
-        
+
+          <!--Blog list-->
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+              <img
+                class="img-responsive center-block"
+                src="blog-thumb-2.png"
+                alt="bulletin blog"
+              />
+            </div>
+            <div class="col-md-8 col-sm-8 bulletin">
+              <div class="display-flex-space-between">
+                <h4 class="media-heading">Sun Grand City Feria</h4>
+                <h4 class="price">12.3 - 31 tỷ</h4>
+              </div>
+              <div class="address">
+                Thuộc phường Bãi Cháy, thành phố Hạ Long, tỉnh Quảng Ninh
+              </div>
+              <div class="info">
+                <div class="company-name">
+                  Công ty TNHH Du lịch Minh Tuấn Sông Ray
+                </div>
+
+                <div class="display-flex">
+                  <div class="flex-33-percent">442 - 1636 m2</div>
+                  <div class="flex-33-percent">Bàn giao: 09/2021</div>
+                  <div class="flex-33-percent">Đang xây dựng</div>
+                </div>
+
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Căn hộ cao cấp</a
+                >
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Căn hộ Studio</a
+                >
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Căn hộ penhouse</a
+                >
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Biệt thự song lập</a
+                >
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Biệt thực đơn lập</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!--Blog list-->
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+              <img
+                class="img-responsive center-block"
+                src="blog-thumb-3.png"
+                alt="bulletin blog"
+              />
+            </div>
+            <div class="col-md-8 col-sm-8 bulletin">
+              <div class="display-flex-space-between">
+                <h4 class="media-heading">Phú Mỹ Future City</h4>
+                <h4 class="price">12.3 - 31 tỷ</h4>
+              </div>
+              <div class="address">
+                Khu phố 1, P.Hắc Dịch, Thị xã Phú Mỹ, Tỉnh Bà Rịa - Vũng Tàu
+              </div>
+              <div class="info">
+                <div class="company-name">
+                  Công ty TNHH Du lịch Minh Tuấn Sông Ray
+                </div>
+
+                <div class="display-flex">
+                  <div class="flex-33-percent">442 - 1636 m2</div>
+                  <div class="flex-33-percent">Bàn giao: 09/2021</div>
+                  <div class="flex-33-percent">Đang xây dựng</div>
+                </div>
+
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Căn hộ cao cấp</a
+                >
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Căn hộ Studio</a
+                >
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Căn hộ penhouse</a
+                >
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Biệt thự song lập</a
+                >
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Biệt thực đơn lập</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!--Blog list-->
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+              <img
+                class="img-responsive center-block"
+                src="blog-thumb-4.png"
+                alt="bulletin blog"
+              />
+            </div>
+            <div class="col-md-8 col-sm-8 bulletin">
+              <div class="display-flex-space-between">
+                <h4 class="media-heading">Sunshine Diamond River</h4>
+                <h4 class="price">12.3 - 31 tỷ</h4>
+              </div>
+              <div class="address">
+                Số 442, Đường Đào Trí, Phường Phú Thuận, Quận 7, Thành phố Hồ
+                Chí Minh
+              </div>
+              <div class="info">
+                <div class="company-name">
+                  Công ty TNHH Du lịch Minh Tuấn Sông Ray
+                </div>
+
+                <div class="display-flex">
+                  <div class="flex-33-percent">442 - 1636 m2</div>
+                  <div class="flex-33-percent">Bàn giao: 09/2021</div>
+                  <div class="flex-33-percent">Đang xây dựng</div>
+                </div>
+
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Căn hộ cao cấp</a
+                >
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Căn hộ Studio</a
+                >
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Căn hộ penhouse</a
+                >
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Biệt thự song lập</a
+                >
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Biệt thực đơn lập</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!--Blog list-->
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+              <img
+                class="img-responsive center-block"
+                src="blog-thumb-5.png"
+                alt="bulletin blog"
+              />
+            </div>
+            <div class="col-md-8 col-sm-8 bulletin">
+              <div class="display-flex-space-between">
+                <h4 class="media-heading">Centa Diamond Vsip Bắc Ninh</h4>
+                <h4 class="price">12.3 - 31 tỷ</h4>
+              </div>
+              <div class="address">Phù Chẩn, Huyện Từ Sơn, Tỉnh Bắc Ninh</div>
+              <div class="info">
+                <div class="company-name">
+                  Công ty TNHH Du lịch Minh Tuấn Sông Ray
+                </div>
+
+                <div class="display-flex">
+                  <div class="flex-33-percent">442 - 1636 m2</div>
+                  <div class="flex-33-percent">Bàn giao: 09/2021</div>
+                  <div class="flex-33-percent">Đang xây dựng</div>
+                </div>
+
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Căn hộ cao cấp</a
+                >
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Căn hộ Studio</a
+                >
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Căn hộ penhouse</a
+                >
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Biệt thự song lập</a
+                >
+                <a class="btn btn-primary" href="blog-single.html" role="button"
+                  >Biệt thực đơn lập</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--// col md 9-->
+
+        <!--Latest Sermons-->
+        <div class="col-md-3">
+          <div class="well">
+            <h4>ĐANG MỞ BÁN 2020</h4>
+
+            <div class="list-group">
+              <div class="display-flex-space-between full-width">
+                <div>TPHCM(27366)</div>
+                <div>Hà nội(16685)</div>
+              </div>
+              <div class="display-flex-space-between full-width">
+                <div>Lâm Đồng(1203)</div>
+                <div>Long An(1173)</div>
+              </div>
+              <div class="display-flex-space-between full-width">
+                <div>Bình Phước(958)</div>
+                <div>Khánh Hòa(769)</div>
+              </div>
+              <div class="display-flex-space-between full-width">
+                <div>Quảng Nam(643)</div>
+                <div>Hải Phòng(581)</div>
+              </div>
+              <div class="display-flex-space-between full-width">
+                <div>Cần Thơ(558)</div>
+                <div>Bình Thuận(548)</div>
+              </div>
+              <div class="display-flex-space-between full-width">
+                <div>Thừa Thiên Huế(449)</div>
+                <div>Bình Định(366)</div>
+              </div>
+              <div class="display-flex-space-between full-width">
+                <div>Quảng Ninh(360)</div>
+                <div>Quảng Ngãi(290)</div>
+              </div>
+              <div class="display-flex-space-between full-width">
+                <div>Kiên Giang(287)</div>
+                <div>Bắc Ninh(207)</div>
+              </div>
+            </div>
+          </div>
+          <a href="#"
+            ><img
+              src="video-thumb.png"
+              class="img-responsive center-block"
+              alt="video thumb"
+          /></a>
+        </div>
       </div>
-</body>
+    </div>
+    <!-- END BLOG LIST / LATEST SERMONS -->
+  </body>
 </html>
